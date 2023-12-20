@@ -1,9 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System.Linq.Expressions;
-using WebNadianSoft.Service.Services;
 using WebNadinSoft.Data;
 
-namespace Coffee.Services.Implementation.Common.Base;
+namespace WebNadianSoft.Service.Implementation;
 
 internal class BaseQuery<TEntity> : IBaseQuery<TEntity> where TEntity : class
 {

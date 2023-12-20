@@ -1,7 +1,7 @@
 ﻿using System.Linq.Expressions;
 using WebNadinSoft.Data;
 
-namespace WebNadianSoft.Service.Services;
+namespace WebNadianSoft.Service.Abstraction;
 
 public interface IBaseQuery<TEntity> : IAsyncDisposable where TEntity : class
 {
