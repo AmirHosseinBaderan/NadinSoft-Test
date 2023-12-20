@@ -15,5 +15,5 @@ public record BaseEntity
     public DateTime CreateDate { get; set; }
 
     [Required]
-    public int Status { get; set; }
+    public byte Status { get; set; }
 }
