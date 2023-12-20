@@ -1,8 +1,5 @@
-﻿using Coffee.Services.Implementation.Common.Base;
-using Microsoft.Extensions.DependencyInjection;
-using WebNadianSoft.Service.Abstraction;
+﻿using Microsoft.Extensions.DependencyInjection;
 using WebNadianSoft.Service.Implemntation;
-using WebNadianSoft.Service.Services;
 
 namespace WebNadianSoft.Service.Implementation;
 
@@ -12,6 +9,11 @@ public static class Injector
     {
         services.AddScoped(typeof(IBaseCud<>), typeof(BaseCud<>));
         services.AddScoped(typeof(IBaseQuery<>), typeof(BaseQuery<>));
+
+
+        services.AddTransient<IProductGet, ProductGet>();
+        services.AddTransient<IProductAction, ProductAction>();
+        services.AddTransient<IProductViewModel, ProductViewModelService>();
 
         return services;
     }
