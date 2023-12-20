@@ -3,7 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebNadinSoft", "WebNadinSoft\WebNadinSoft.csproj", "{A8D489F9-09A2-48DE-89A4-10B0946CDCAC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebNadinSoft", "WebNadinSoft\WebNadinSoft.csproj", "{A8D489F9-09A2-48DE-89A4-10B0946CDCAC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{1D26BEFB-3B90-4F72-A7F8-9488FC6462C9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data Base", "Data Base", "{AFB9036F-3038-4901-8ED3-16531ECEB075}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{44B3C6B7-E91E-4598-8A9A-91FA44A1FA27}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Main", "Main", "{8C5E510F-FACA-4D37-84D4-6C68C415A051}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebNadianSoft.DataBase.Context", "Src\Data Base\WebNadianSoft.DataBase.Context\WebNadianSoft.DataBase.Context.csproj", "{55E11ECB-A374-437F-814F-87CC8E6982A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebNadianSoft.DataBase.Entities", "Src\Data Base\WebNadianSoft.DataBase.Entities\WebNadianSoft.DataBase.Entities.csproj", "{9EECF707-BCD0-43F1-9522-DEDD3714AD05}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebNadianSoft.DataBase.ViewModel", "Src\Data Base\WebNadianSoft.DataBase.ViewModel\WebNadianSoft.DataBase.ViewModel.csproj", "{22B1EE4E-FD4C-4197-8241-CFED3247CBE3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +29,30 @@ Global
 		{A8D489F9-09A2-48DE-89A4-10B0946CDCAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A8D489F9-09A2-48DE-89A4-10B0946CDCAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A8D489F9-09A2-48DE-89A4-10B0946CDCAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55E11ECB-A374-437F-814F-87CC8E6982A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55E11ECB-A374-437F-814F-87CC8E6982A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55E11ECB-A374-437F-814F-87CC8E6982A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55E11ECB-A374-437F-814F-87CC8E6982A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EECF707-BCD0-43F1-9522-DEDD3714AD05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EECF707-BCD0-43F1-9522-DEDD3714AD05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EECF707-BCD0-43F1-9522-DEDD3714AD05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EECF707-BCD0-43F1-9522-DEDD3714AD05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22B1EE4E-FD4C-4197-8241-CFED3247CBE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22B1EE4E-FD4C-4197-8241-CFED3247CBE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22B1EE4E-FD4C-4197-8241-CFED3247CBE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22B1EE4E-FD4C-4197-8241-CFED3247CBE3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A8D489F9-09A2-48DE-89A4-10B0946CDCAC} = {8C5E510F-FACA-4D37-84D4-6C68C415A051}
+		{AFB9036F-3038-4901-8ED3-16531ECEB075} = {1D26BEFB-3B90-4F72-A7F8-9488FC6462C9}
+		{44B3C6B7-E91E-4598-8A9A-91FA44A1FA27} = {1D26BEFB-3B90-4F72-A7F8-9488FC6462C9}
+		{8C5E510F-FACA-4D37-84D4-6C68C415A051} = {1D26BEFB-3B90-4F72-A7F8-9488FC6462C9}
+		{55E11ECB-A374-437F-814F-87CC8E6982A6} = {AFB9036F-3038-4901-8ED3-16531ECEB075}
+		{9EECF707-BCD0-43F1-9522-DEDD3714AD05} = {AFB9036F-3038-4901-8ED3-16531ECEB075}
+		{22B1EE4E-FD4C-4197-8241-CFED3247CBE3} = {AFB9036F-3038-4901-8ED3-16531ECEB075}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6F352BDD-B822-4B17-9528-50FEA367E5F0}
